@@ -117,6 +117,7 @@ class ViewController: UIViewController {
     @IBAction func taxReally(_ sender: UIStepper) {
 
         tax = NSDecimalNumber.init(value: taxOut.value)
+        taxLabel.text = "\(taxOut.value)"
         tax = tax.dividing(by:100)
         GetTotal()
     }
@@ -125,7 +126,7 @@ class ViewController: UIViewController {
     
 
     @IBAction func TippStepper(_ sender: UIStepper) {
-    //@IBAction func tipStepper(_ sender: Any) {
+   
         tip = NSDecimalNumber.init(value: tipOut.value)
         tipLabel.text = "\(tipOut.value)"
         tip = tip.dividing(by: 100)
