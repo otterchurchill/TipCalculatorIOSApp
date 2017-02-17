@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="He0-gp-iY0">
-                                <rect key="frame" x="155.80000000000007" y="137" width="97" height="30"/>
+                                <rect key="frame" x="119.80000000000007" y="137" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </textField>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8.1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DM1-v0-1eo">
-                                <rect key="frame" x="155.80000000000007" y="190" width="97" height="30"/>
+                                <rect key="frame" x="118.80000000000007" y="190" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </textField>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-8B-LqL">
-                                <rect key="frame" x="156.80000000000007" y="256" width="97" height="30"/>
+                                <rect key="frame" x="119.80000000000007" y="256" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -52,35 +52,35 @@
                                 </connections>
                             </textField>
                             <slider hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.081000000000000003" minValue="0.081000000000000003" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Egq-QR-PqH">
-                                <rect key="frame" x="154.80000000000007" y="191" width="118" height="31"/>
+                                <rect key="frame" x="244.80000000000007" y="191" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="taxSlide:" destination="BYZ-38-t0r" eventType="touchDragInside" id="mM8-Md-pba"/>
                                 </connections>
                             </slider>
                             <slider hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JWN-cc-ZcB">
-                                <rect key="frame" x="153.80000000000007" y="256" width="118" height="31"/>
+                                <rect key="frame" x="244.80000000000007" y="256" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="tipSlide:" destination="BYZ-38-t0r" eventType="touchDragInside" id="cLm-RB-L5n"/>
                                 </connections>
                             </slider>
                             <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dZ1-0e-oes">
-                                <rect key="frame" x="159.80000000000007" y="257" width="94" height="29"/>
+                                <rect key="frame" x="254.80000000000007" y="257" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="TippStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="4SR-3l-QrF"/>
                                 </connections>
                             </stepper>
                             <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="yaZ-gH-G2c">
-                                <rect key="frame" x="158.80000000000007" y="192" width="94" height="29"/>
+                                <rect key="frame" x="256.80000000000007" y="192" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="taxReally:" destination="BYZ-38-t0r" eventType="valueChanged" id="rdO-99-Qsx"/>
                                 </connections>
                             </stepper>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sLL-GM-Mgh">
-                                <rect key="frame" x="155.80000000000007" y="348" width="97" height="30"/>
+                                <rect key="frame" x="119.80000000000007" y="348" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

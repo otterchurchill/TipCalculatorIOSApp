@@ -49,16 +49,15 @@ class ViewController: UIViewController {
         
         subtotalLabel.isHidden = false
         totalLabel.isHidden = false
-        
-    }
+        taxLabel.isHidden = false
+        tipLabel.isHidden = false    }
 
     func Hidden(stateText: Bool, stateSlide: Bool, stateStepper:Bool){
         hs1.isHidden = stateSlide
         hs2.isHidden = stateSlide
         taxOut.isHidden = stateStepper
         tipOut.isHidden = stateStepper
-        taxLabel.isHidden = stateText
-        tipLabel.isHidden = stateText
+        
     }
 
     func GetTotal(){
@@ -104,22 +103,19 @@ class ViewController: UIViewController {
         
         tax = NSDecimalNumber.init(value: hs1.value)
         //tax = NSDecimalNumber.init(decimal: <#T##Decimal#>): hs1.value)
-        taxLabel.text = "\(tax)"
+        taxLabel.text = "\(tax.multiplying(by: 100.0))"
         GetTotal()
     }
     
  
     @IBAction func tipSlide(_ sender: Any) {
         tip = NSDecimalNumber.init(value: hs2.value)
-        tipLabel.text = "\(hs2.value)"
+        tipLabel.text = "\(hs2.value.multiplied(by: 100.0))"
         GetTotal()
     }
     
     @IBAction func taxReally(_ sender: UIStepper) {
-    //@IBAction func taxagain(_ sender: UIStepper) {
-    //@IBAction func taxStep2(_ sender: UIStepper) {
-    //@IBAction func taxStep(_ sender: UIStepper) {
-    //@IBAction func taxStepper(_ sender: UIStepper) {
+
         tax = NSDecimalNumber.init(value: taxOut.value)
         tax = tax.dividing(by:100)
         GetTotal()
@@ -131,6 +127,7 @@ class ViewController: UIViewController {
     @IBAction func TippStepper(_ sender: UIStepper) {
     //@IBAction func tipStepper(_ sender: Any) {
         tip = NSDecimalNumber.init(value: tipOut.value)
+        tipLabel.text = "\(tipOut.value)"
         tip = tip.dividing(by: 100)
         GetTotal()
     }
@@ -138,6 +135,7 @@ class ViewController: UIViewController {
     @IBAction func taxTxtUpdate(_ sender: Any) {
         tax = NSDecimalNumber(string: taxLabel.text)
         tax = tax.dividing(by:100)
+        taxLabel.text = "\(taxOut.value)"
         GetTotal()
     }
     
